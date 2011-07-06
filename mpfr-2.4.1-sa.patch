@@ -1,0 +1,24 @@
+diff -up mpfr-2.4.1/Makefile.in.pom mpfr-2.4.1/Makefile.in
+--- mpfr-2.4.1/Makefile.in.pom	2009-02-25 17:18:06.000000000 +0100
++++ mpfr-2.4.1/Makefile.in	2010-06-23 12:20:44.000000000 +0200
+@@ -183,7 +183,7 @@ AUTOMAKE = @AUTOMAKE@
+ AWK = @AWK@
+ CC = @CC@
+ CCDEPMODE = @CCDEPMODE@
+-CFLAGS = @CFLAGS@
++CFLAGS = @CFLAGS@ -fno-strict-aliasing
+ CPP = @CPP@
+ CPPFLAGS = @CPPFLAGS@
+ CXX = @CXX@
+diff -up mpfr-2.4.1/tests/Makefile.in.pom mpfr-2.4.1/tests/Makefile.in
+--- mpfr-2.4.1/tests/Makefile.in.pom	2009-02-25 17:18:06.000000000 +0100
++++ mpfr-2.4.1/tests/Makefile.in	2010-06-23 12:20:57.000000000 +0200
+@@ -907,7 +907,7 @@ AUTOMAKE = @AUTOMAKE@
+ AWK = @AWK@
+ CC = @CC@
+ CCDEPMODE = @CCDEPMODE@
+-CFLAGS = @CFLAGS@
++CFLAGS = @CFLAGS@ -fno-strict-aliasing
+ CPP = @CPP@
+ CPPFLAGS = @CPPFLAGS@
+ CXX = @CXX@
